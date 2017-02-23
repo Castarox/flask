@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio Kamil Mika-Zmarzły</title>
+        <link rel="stylesheet" href="static/main.css">
+        <link rel="stylesheet" href="static/contact.css">
+    </head>
+    <body>
+        {%  for student in  students %}
+        <p><strong>Name:</strong> {{ student[0] }}<strong>Surname:</strong> {{ student[1] }}</p>
+        {% endfor %}
+    </body>
+</html>
