@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio Kamil Mika-Zmarzły</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/contact.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a class="active" href='contact.html'>Contact</a></li>
+                <li><a href='project.html'>Projects</a></li>
+            </ul>
+        </nav>
+        <header>
+            <img class="head-img" src="images/prof.jpg" alt='Moja twarz'>
+            <h2>Kamil Mika-Zmarzły</h2>
+            <hr class="line">
+            <h1>PYTHON&nbsp;&nbsp;HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JS</h1>
+        </header>
+        <div class="contact">
+            <h3>Contact with me</h3>
+            <form name='myForm' method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" onchange="validateForm()" placeholder="Enter your full name" autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" name="email" onchange="validateForm()" placeholder="Give your email">
+                </div>
+                <textarea placeholder="Enter your message(min 20 char max 500)" id="message" name="message" onchange="validateForm()" rows="10" cols="50"></textarea>
+                <input type="submit" value="Send" id="send" onclick="sendMessage()" disabled>
+            </form>
+        </div>
+        <footer>
+            <p>©2017 Kamil Mika-Zmarzły</p>
+            <hr class="line"/>
+            <p>All Rights reserved</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

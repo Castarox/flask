@@ -16,6 +16,10 @@ def welcome():
         students.append(student)
     return render_template("welcome.html", students=students)
 
+@app.route('/contact')
+def contact():
+    return render_template("contact.html")
+
 def connect_db():
     return sqlite3.connect(app.database)
 if __name__ == '__main__':
